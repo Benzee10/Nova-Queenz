@@ -1,0 +1,314 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getPostUrlBySlug } from "@utils/url-utils";
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  similarPosts: any[];
+  class?: string;
+}
+
+const { similarPosts, class: className = "" } = Astro.props;
+
+// If no similar posts, don't render anything
+if (!similarPosts || similarPosts.length === 0) {
+  return null;
+}
+---
+
+<section class={`related-posts-section ${className}`}>
+  <div class="related-header">
+    <div class="header-icon">
+      <Icon name="material-symbols:image-outline" class="icon" />
+    </div>
+    <h3 class="header-title">Related Galleries</h3>
+  </div>
+
+  <div class="related-grid">
+    {similarPosts.map((post, index) => (
+      <article class="related-post-card">
+        <a href={getPostUrlBySlug(post.slug)} class="post-link">
+          <div class="image-container">
+            {post.data.image ? (
+              <img 
+                src={post.data.image} 
+                alt={post.data.title}
+                class="post-image"
+                loading="lazy"
+              />
+            ) : (
+              <div class="placeholder-image">
+                <Icon name="material-symbols:image-outline" class="placeholder-icon" />
+              </div>
+            )}
+          </div>
+
+          <div class="post-content">
+            <h4 class="post-title">{post.data.title}</h4>
+            {post.data.category && (
+              <span class="post-category">{post.data.category}</span>
+            )}
+            <time class="post-date">
+              {new Date(post.data.published).toLocaleDateString()}
+            </time>
+          </div>
+        </a>
+        {index % 3 === 1 && (
+          <div class="premium-badge">
+            <a href="https://whatsappad.vercel.app/" class="premium-link">
+              👑 VIP ACCESS
+            </a>
+          </div>
+        )}
+      </article>
+    ))}
+  </div>
+
+  <div class="gallery-footer-cta">
+    <div class="cta-content">
+      <h4>Want More Premium Galleries?</h4>
+      <p>Join our VIP community for unlimited access to exclusive content</p>
+      <a href="https://whatsappad.vercel.app/" class="footer-cta-btn">
+        🚀 Get Unlimited Access Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .related-posts-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(var(--card-background));
+    border-radius: 12px;
+    border: 1px solid rgba(var(--line-divider));
+  }
+
+  .related-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .header-icon {
+    width: 32px;
+    height: 32px;
+    background: rgba(var(--primary), 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon {
+    font-size: 1.25rem;
+    color: var(--primary);
+  }
+
+  .header-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: rgba(var(--text-color), 0.9);
+    margin: 0;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .related-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .related-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .related-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .related-post-card {
+    background: rgba(var(--card-background));
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(var(--line-divider), 0.3);
+    position: relative; /* Needed for absolute positioning of the badge */
+  }
+
+  .related-post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: rgba(var(--primary), 0.3);
+  }
+
+  .post-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .image-container {
+    aspect-ratio: 4/5;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+    position: relative;
+  }
+
+  .post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .related-post-card:hover .post-image {
+    transform: scale(1.05);
+  }
+
+  .placeholder-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(var(--primary), 0.1), rgba(var(--primary), 0.05));
+  }
+
+  .placeholder-icon {
+    font-size: 2rem;
+    color: rgba(var(--primary), 0.4);
+  }
+
+  .post-content {
+    padding: 1rem;
+  }
+
+  .post-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    color: rgba(var(--text-color), 0.9);
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .post-category {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--primary);
+    background: rgba(var(--primary), 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-date {
+    font-size: 0.75rem;
+    color: rgba(var(--text-color), 0.6);
+    display: block;
+  }
+
+  /* Added styles for the VIP badge */
+  .premium-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(var(--primary), 0.8);
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    transform: rotate(5deg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  .premium-link {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Styles for the footer CTA */
+  .gallery-footer-cta {
+    margin-top: 2.5rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(var(--primary), 0.1), rgba(var(--primary), 0.05));
+    border-radius: 12px;
+    text-align: center;
+    border: 1px dashed rgba(var(--primary), 0.5);
+  }
+
+  .gallery-footer-cta h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgba(var(--text-color), 0.9);
+    margin-bottom: 0.75rem;
+  }
+
+  .gallery-footer-cta p {
+    font-size: 0.95rem;
+    color: rgba(var(--text-color), 0.7);
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-cta-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(var(--primary), 0.3);
+  }
+
+  .footer-cta-btn:hover {
+    background-color: var(--primary-darker); /* Assuming a --primary-darker variable exists */
+    transform: translateY(-2px);
+  }
+
+  .dark .related-posts-section {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .dark .related-post-card {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .dark .image-container {
+    background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  }
+
+  .dark .premium-badge {
+    background-color: rgba(var(--primary), 0.8);
+  }
+
+  .dark .gallery-footer-cta {
+    background: linear-gradient(135deg, rgba(var(--primary), 0.1), rgba(var(--primary), 0.05));
+    border: 1px dashed rgba(var(--primary), 0.5);
+  }
+
+  .dark .footer-cta-btn {
+    background-color: var(--primary);
+  }
+</style>

@@ -1,0 +1,83 @@
+
+---
+export interface Props {
+  position?: string;
+  class?: string;
+  imageUrl?: string;
+}
+
+const { position = "general", class: className = "", imageUrl } = Astro.props;
+---
+
+<div class:list={["banner-ad-container w-full flex justify-center my-6", className]}>
+  <a 
+    href="https://whatsappad.vercel.app/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="banner-ad-link block w-full max-w-4xl transition-transform hover:scale-[1.02] active:scale-[0.98]"
+    aria-label={`Banner Advertisement - ${position}`}
+  >
+    {imageUrl ? (
+      <div class="banner-ad w-full h-40 md:h-48 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 relative">
+        <img 
+          src={imageUrl} 
+          alt="Advertisement" 
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
+        <div class="absolute inset-0 bg-black/10 hover:bg-black/5 transition-all duration-300"></div>
+      </div>
+    ) : (
+      <div class="banner-ad w-full h-32 md:h-40 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center text-white font-bold text-xl md:text-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+        <div class="text-center px-4">
+          <div class="mb-2">🚀 Premium Content</div>
+          <div class="text-sm md:text-base opacity-90">Click to Explore More</div>
+        </div>
+      </div>
+    )}
+  </a>
+</div>
+
+<style>
+  .banner-ad-container {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  .banner-ad {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .banner-ad::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+  }
+  
+  .banner-ad-link:hover .banner-ad::before {
+    left: 100%;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .banner-ad {
+      height: 120px;
+    }
+  }
+</style>

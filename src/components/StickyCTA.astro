@@ -1,0 +1,86 @@
+
+---
+const { url = "https://whatsappad.vercel.app/", text = "🔥 Get Premium Access" } = Astro.props;
+---
+
+<div id="sticky-cta" class="fixed bottom-6 right-6 z-50 opacity-0 translate-y-4 transition-all duration-300 pointer-events-none">
+    <a 
+        href={url} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="
+            block px-6 py-3 
+            bg-gradient-to-r from-[var(--primary)] to-purple-600 
+            hover:from-purple-600 hover:to-[var(--primary)]
+            text-white font-bold text-sm
+            rounded-full shadow-lg hover:shadow-xl
+            transform hover:scale-105 active:scale-95
+            transition-all duration-200
+            animate-pulse hover:animate-none
+            pointer-events-auto
+        "
+        aria-label="Premium Access CTA"
+    >
+        <div class="flex items-center gap-2">
+            <span>{text}</span>
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+        </div>
+    </a>
+</div>
+
+<script>
+function initStickyCTA() {
+    const stickyCTA = document.getElementById('sticky-cta');
+    if (!stickyCTA) return;
+
+    let isVisible = false;
+    const showThreshold = 300; // Show after scrolling 300px
+
+    function toggleCTAVisibility() {
+        const scrolled = window.scrollY || document.documentElement.scrollTop;
+        
+        if (scrolled > showThreshold && !isVisible) {
+            stickyCTA.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+            stickyCTA.classList.add('opacity-100', 'translate-y-0');
+            isVisible = true;
+        } else if (scrolled <= showThreshold && isVisible) {
+            stickyCTA.classList.remove('opacity-100', 'translate-y-0');
+            stickyCTA.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+            isVisible = false;
+        }
+    }
+
+    // Throttle scroll events for better performance
+    let ticking = false;
+    function handleScroll() {
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                toggleCTAVisibility();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    
+    // Check initial state
+    toggleCTAVisibility();
+}
+
+// Initialize on page load
+initStickyCTA();
+
+// Re-initialize when navigating with Swup
+const setup = () => {
+    window.swup.hooks.on('page:view', initStickyCTA);
+}
+
+if (window?.swup?.hooks) {
+    setup();
+} else {
+    document.addEventListener('swup:enable', setup);
+}
+</script>

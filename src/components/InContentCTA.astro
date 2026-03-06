@@ -1,0 +1,64 @@
+
+---
+interface Props {
+  type?: 'premium' | 'download' | 'exclusive' | 'vip';
+  text?: string;
+  position?: 'inline' | 'block';
+}
+
+const { type = 'premium', text, position = 'inline' } = Astro.props;
+
+const ctaText = text || {
+  premium: "🔓 Unlock Full HD Gallery",
+  download: "📥 Download All Images",
+  exclusive: "✨ Get Exclusive Content",
+  vip: "👑 Join VIP Access"
+}[type];
+
+const className = position === 'block' ? 'block-cta' : 'inline-cta';
+---
+
+<div class={`in-content-cta ${className}`}>
+  <a href="https://whatsappad.vercel.app/" class="smart-link-btn">
+    {ctaText}
+  </a>
+</div>
+
+<style>
+  .in-content-cta {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  
+  .inline-cta {
+    display: inline-block;
+    margin: 0.5rem 1rem;
+  }
+  
+  .smart-link-btn {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(238, 90, 36, 0.3);
+  }
+  
+  .smart-link-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(238, 90, 36, 0.4);
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .smart-link-btn:hover {
+    animation: pulse 1s infinite;
+  }
+</style>

@@ -1,0 +1,67 @@
+---
+export interface Props {
+  class?: string;
+}
+
+const { class: className = "" } = Astro.props;
+---
+
+<div class:list={["top-banner-ad w-full flex justify-center mb-6", className]}>
+  <a 
+    href="https://shorturl.at/7QDQP" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="banner-link block w-full transition-all duration-300 hover:scale-[1.01]"
+    aria-label="Top Banner Advertisement"
+  >
+    <div class="banner-content w-full bg-gradient-to-r from-pink-500 via-red-500 to-pink-600 text-white py-4 px-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+      <div class="text-center font-bold text-base md:text-lg lg:text-xl">
+        Stop sending paragraphs and start sending triggers. Learn the 100 messages that make her obsess. 👉🏼
+        <span class="underline ml-1">Click here</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+<style>
+  .top-banner-ad {
+    animation: slideDown 0.5s ease-out forwards;
+  }
+  
+  .banner-content {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .banner-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.6s;
+  }
+  
+  .banner-link:hover .banner-content::before {
+    left: 100%;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .banner-content {
+      padding: 0.75rem 1rem;
+    }
+  }
+</style>

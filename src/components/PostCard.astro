@@ -1,0 +1,74 @@
+---
+import type { CollectionEntry } from "astro:content";
+import path from "node:path";
+import { Icon } from "astro-icon/components";
+import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
+import { getDir } from "../utils/url-utils";
+import ImageWrapper from "./misc/ImageWrapper.astro";
+import PostMetadata from "./PostMeta.astro";
+
+interface Props {
+	class?: string;
+	entry: CollectionEntry<"posts">;
+	title: string;
+	url: string;
+	published: Date;
+	updated?: Date;
+	tags: string[];
+	category: string | null;
+	image: string;
+	description: string;
+	draft: boolean;
+	style: string;
+}
+const {
+	entry,
+	title,
+	url,
+	published,
+	updated,
+	tags,
+	category,
+	image,
+	description,
+	style,
+} = Astro.props;
+const className = Astro.props.class;
+
+const hasCover = image !== undefined && image !== null && image !== "";
+
+const coverWidth = "28%";
+
+const { remarkPluginFrontmatter } = await entry.render();
+---
+<div class:list={["gallery-card relative w-full min-h-80 md:h-96 rounded-[var(--radius-large)] overflow-hidden group cursor-pointer", className]} style={style}>
+    <a href={url} class="block w-full h-full relative">
+        <!-- Background Image -->
+        {hasCover ? (
+            <ImageWrapper 
+                src={image} 
+                basePath={path.join("content/posts/", getDir(entry.id))} 
+                alt="Cover Image of the Post"
+                class="w-full h-full md:object-cover object-contain transition-transform duration-300 group-hover:scale-105"
+            />
+        ) : (
+            <div class="w-full h-full bg-gradient-to-br from-[var(--primary)] to-[var(--primary-darker)] opacity-80"></div>
+        )}
+        
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:from-black/90 group-hover:via-black/50 transition-all duration-300"></div>
+        
+        <!-- Content Overlay - Only Title on Hover -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <!-- Title -->
+            <h2 class="text-xl md:text-2xl font-bold text-center leading-tight text-white">
+                {title}
+            </h2>
+        </div>
+    </a>
+</div></old_str>
+<div class="transition border-t-[1px] border-dashed mx-6 border-black/10 dark:border-white/[0.15] last:border-t-0 md:hidden"></div>
+
+<style define:vars={{coverWidth}}>
+</style>

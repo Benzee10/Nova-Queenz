@@ -1,0 +1,290 @@
+
+---
+interface Props {
+  currentModel?: string;
+  category?: string;
+}
+
+const { currentModel, category } = Astro.props;
+---
+
+<div id="smart-rec-bar" class="smart-rec-bar hidden">
+  <div class="smart-rec-content">
+    <div class="smart-rec-text">
+      <span class="smart-rec-icon">🎯</span>
+      <div class="smart-rec-message">
+        <strong>Enjoying this content?</strong>
+        <p>Get personalized recommendations and exclusive access</p>
+      </div>
+    </div>
+    <a 
+      href="https://whatsappad.vercel.app/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="smart-rec-button"
+    >
+      Get My Recommendations
+      <svg class="smart-rec-arrow" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+      </svg>
+    </a>
+    <button class="smart-rec-close" onclick="hideRecommendationBar()">×</button>
+  </div>
+</div>
+
+<style>
+  .smart-rec-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    z-index: 1000;
+    transform: translateY(-100%);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .smart-rec-bar.show {
+    transform: translateY(0);
+  }
+  
+  .smart-rec-bar.hidden {
+    display: none;
+  }
+  
+  .smart-rec-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .smart-rec-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .smart-rec-icon {
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+  }
+  
+  .smart-rec-message strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .smart-rec-message p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.9rem;
+  }
+  
+  .smart-rec-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .smart-rec-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .smart-rec-arrow {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+  }
+  
+  .smart-rec-button:hover .smart-rec-arrow {
+    transform: translateX(3px);
+  }
+  
+  .smart-rec-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+  }
+  
+  .smart-rec-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+  }
+  
+  @media (max-width: 768px) {
+    .smart-rec-content {
+      flex-direction: column;
+      gap: 0.75rem;
+      text-align: center;
+      padding: 0.75rem 1rem;
+    }
+    
+    .smart-rec-text {
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    
+    .smart-rec-icon {
+      font-size: 1.5rem;
+    }
+    
+    .smart-rec-message strong {
+      font-size: 1rem;
+    }
+    
+    .smart-rec-message p {
+      font-size: 0.8rem;
+    }
+    
+    .smart-rec-button {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+      border-radius: 20px;
+    }
+    
+    .smart-rec-close {
+      font-size: 1.25rem;
+      padding: 0.25rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .smart-rec-content {
+      padding: 0.5rem;
+      gap: 0.5rem;
+    }
+    
+    .smart-rec-message strong {
+      font-size: 0.9rem;
+    }
+    
+    .smart-rec-message p {
+      font-size: 0.75rem;
+    }
+    
+    .smart-rec-button {
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+    }
+  }
+</style>
+
+<script>
+  function initSmartRecommendationBar() {
+    const recBar = document.getElementById('smart-rec-bar');
+    if (!recBar) return;
+    
+    let engagementScore = 0;
+    let timeOnPage = 0;
+    let hasScrolled = false;
+    let hasShownBar = false;
+    
+    // Track time on page
+    const startTime = Date.now();
+    setInterval(() => {
+      timeOnPage = (Date.now() - startTime) / 1000;
+    }, 1000);
+    
+    // Track scroll engagement
+    function handleScroll() {
+      if (!hasScrolled) {
+        hasScrolled = true;
+        engagementScore += 20;
+      }
+      
+      const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+      if (scrollPercent > 50) {
+        engagementScore += 30;
+      }
+      
+      checkEngagement();
+    }
+    
+    // Track click/touch engagement
+    function handleClick(e) {
+      if (e.target.tagName === 'IMG' || e.target.closest('.post-card') || e.target.closest('a')) {
+        engagementScore += 25;
+        checkEngagement();
+      }
+    }
+    
+    // Mobile-specific touch tracking
+    function handleTouchStart(e) {
+      if (e.target.tagName === 'IMG' || e.target.closest('.post-card') || e.target.closest('a')) {
+        engagementScore += 15;
+        checkEngagement();
+      }
+    }
+    
+    function checkEngagement() {
+      if (!hasShownBar && (engagementScore >= 50 || timeOnPage >= 5)) {
+        showRecommendationBar();
+        hasShownBar = true;
+      }
+    }
+    
+    function showRecommendationBar() {
+      recBar.classList.remove('hidden');
+      setTimeout(() => {
+        recBar.classList.add('show');
+      }, 100);
+      
+      // Auto-hide after 15 seconds
+      setTimeout(() => {
+        if (recBar.classList.contains('show')) {
+          hideRecommendationBar();
+        }
+      }, 15000);
+    }
+    
+    window.hideRecommendationBar = function() {
+      recBar.classList.remove('show');
+      setTimeout(() => {
+        recBar.classList.add('hidden');
+      }, 500);
+    }
+    
+    // Event listeners
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    document.addEventListener('click', handleClick);
+    document.addEventListener('touchstart', handleTouchStart, { passive: true });
+    
+    // Check engagement every 10 seconds
+    setInterval(checkEngagement, 10000);
+  }
+  
+  // Initialize
+  document.addEventListener('DOMContentLoaded', initSmartRecommendationBar);
+  
+  // Re-initialize for SPA navigation
+  if (window?.swup?.hooks) {
+    window.swup.hooks.on('page:view', initSmartRecommendationBar);
+  }
+</script>
