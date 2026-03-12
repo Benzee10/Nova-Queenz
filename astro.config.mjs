@@ -158,6 +158,9 @@ export default defineConfig({
                 ],
         },
         vite: {
+                server: {
+                        allowedHosts: true,
+                },
                 build: {
                         rollupOptions: {
                                 onwarn(warning, warn) {
