@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/3/e/2/2/973197578650cbe63c58b60fa86012d2.mp4/1280/973197578650cbe63c58b60fa86012d2.mp4_9_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/3/e/2/2/63e22d64d133a.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/3/e/2/2/63e22dae21f1b.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/3/e/2/2/63e22dd21d547.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/perfect-ebony-dakota-simone-enjoys-the-sunny-days-as-she-reveals-her-dazzling-flexible-body-50659.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

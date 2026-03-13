@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/5/6/9/d/d6ca8a4294b70536322ee38cc94c0366.mp4/1280/d6ca8a4294b70536322ee38cc94c0366.mp4_3_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/5/6/9/d/6569d7d677446.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/5/6/9/d/6569d855ef9f3.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/5/6/9/d/6569d8908160d.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/outstanding-ebony-babe-fae-love-takes-off-her-clothes-on-the-couch-displaying-her-gorgeous-slim-figure-with-perky-boobs-and-masturbates-53523.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

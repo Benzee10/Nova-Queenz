@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/5/0/c/1/d10bb7a887c1509423745eb73ad0f045.mp4/1280/d10bb7a887c1509423745eb73ad0f045.mp4_7_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/5/0/c/1/650c1bd923576.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/5/0/c/1/650c1c17dead8.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/5/0/c/1/650c1c31db8c6.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/two-hot-lesbian-babes-undress-and-help-each-other-reach-climax-with-oral-sex-52854.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

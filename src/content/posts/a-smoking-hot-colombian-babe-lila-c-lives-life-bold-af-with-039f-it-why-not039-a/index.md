@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/8/1/8/c/71aa5ce344e5742e2fdfe266f32439aa.mp4/1280/71aa5ce344e5742e2fdfe266f32439aa.mp4_3_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/8/1/8/c/6818caa808222.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/8/1/8/c/6818cad1c172b.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/8/1/8/c/6818cae24b199.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/a-smoking-hot-colombian-babe-lila-c-lives-life-bold-af-with-f-it-why-not-attitude-every-day-58025.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

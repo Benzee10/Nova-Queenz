@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/4/d/a/2/49b9b6e2445e8c5d106761b21d95bf53.mp4/1280/49b9b6e2445e8c5d106761b21d95bf53.mp4_3_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/4/d/a/2/64da220419014.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/4/d/a/2/64da2270ae2c7.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/4/d/a/2/64da22a6ee87f.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/two-hot-babes-giving-a-guy-the-time-of-his-life-as-they-take-turns-on-his-wang-52488.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

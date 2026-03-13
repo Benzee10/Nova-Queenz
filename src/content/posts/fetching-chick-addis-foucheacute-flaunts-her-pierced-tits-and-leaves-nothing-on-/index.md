@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/6/7/e/e/6348e8eb9c3ff684f4db05e2e232be2a.mp4/1280/6348e8eb9c3ff684f4db05e2e232be2a.mp4_7_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/7/e/e/667ee2802e068.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/7/e/e/667ee34a6d143.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/7/e/e/667ee39a30f03.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/fetching-chick-addis-fouche-flaunts-her-pierced-tits-and-leaves-nothing-on-but-high-heels-55304.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

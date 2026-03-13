@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/6/7/9/9/5e52e78bce8f2d353275e1f2a2b8982b.mp4/1280/5e52e78bce8f2d353275e1f2a2b8982b.mp4_8_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/7/9/9/6679924d75315.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/7/9/9/667992b0d9aca.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/7/9/9/667992da93536.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/fetching-babe-sofi-vega-monas-passionately-as-the-cameraman-goes-deep-inside-her-after-a-photoshoot-55254.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

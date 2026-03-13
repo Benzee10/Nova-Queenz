@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/4/f/f/1/efd879b0a32f5fa403ca3894aa642fb3.mp4/1280/efd879b0a32f5fa403ca3894aa642fb3.mp4_7_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/4/f/f/1/64ff1490635d7.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/4/f/f/1/64ff14dee2149.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/4/f/f/1/64ff1505c8ed5.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/gifted-ebony-having-hot-times-with-her-lover-as-he-eats-up-her-muffin-before-she-rides-him-fiercly-making-her-amazing-breasts-bounce-52747.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

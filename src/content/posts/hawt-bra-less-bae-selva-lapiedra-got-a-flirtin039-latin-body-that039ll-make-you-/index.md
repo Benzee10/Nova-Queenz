@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/8/2/b/1/48a8b6190afad32db4d58055cee0c87f.mp4/1280/48a8b6190afad32db4d58055cee0c87f.mp4_4_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/8/2/b/1/682b1d9ea969c.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/8/2/b/1/682b1dc3d2f1c.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/8/2/b/1/682b1dd40b1e6.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/hawt-bra-less-bae-selva-lapiedra-got-a-flirtin-latin-body-that-ll-make-you-holler-her-name-honey-58120.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

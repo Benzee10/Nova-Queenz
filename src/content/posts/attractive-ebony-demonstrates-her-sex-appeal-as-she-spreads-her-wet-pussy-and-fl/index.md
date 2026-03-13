@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/6/0/f/d/0eaeb6766960c6179f91e1e7bb60a39c.mp4/1280/0eaeb6766960c6179f91e1e7bb60a39c.mp4_6_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/0/f/d/660fd5db4668d.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/0/f/d/660fd60de2c82.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/0/f/d/660fd626c2b85.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/attractive-ebony-demonstrates-her-sex-appeal-as-she-spreads-her-wet-pussy-and-flaunts-her-nice-tits-on-the-beach-54596.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

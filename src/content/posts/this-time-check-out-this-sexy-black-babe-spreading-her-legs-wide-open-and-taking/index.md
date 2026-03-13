@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/6/e/3/f/c32d9add635f91a38715e760e9025061.mp4/1280/c32d9add635f91a38715e760e9025061.mp4_7_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/e/3/f/66e3f9480b5db.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/e/3/f/66e3f98670e47.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/e/3/f/66e3f9ace4e02.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/this-time-check-out-this-sexy-black-babe-spreading-her-legs-wide-open-and-taking-it-in-the-rear-while-you-get-off-on-her-ebony-beauty-56038.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

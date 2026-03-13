@@ -13,7 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/5/4/3/c/e/23c0b312d025aaf25d336fb62244b8f7.mp4/1280/23c0b312d025aaf25d336fb62244b8f7.mp4_4_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/5/4/3/c/e/543ce16618aa3.mp4?ri=500k&rs=200k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/ebony-girl-shows-off-her-amazing-body-curves-605.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

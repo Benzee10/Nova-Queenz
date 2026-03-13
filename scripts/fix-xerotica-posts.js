@@ -20,23 +20,10 @@ function fetchUrl(url, retries = 4, delay = 2000) {
         reject(err)
       }
     })
-    req.setTimeout(15000, () => { req.destroy() })
+    req.setTimeout(15000, () => {
+      req.destroy()
+    })
   })
-}
-
-function slugify(text) {
-  return text
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9\s-]/g, "")
-    .replace(/\s+/g, "-")
-    .replace(/-+/g, "-")
-    .slice(0, 80)
-}
-
-function getDate() {
-  const now = new Date()
-  return now.toISOString().replace("Z", "").slice(0, 19)
 }
 
 function extractMeta(html, property) {
@@ -65,78 +52,82 @@ function extractVideoLinks(html) {
   return links
 }
 
-async function processVideo(videoUrl, index, total, category) {
-  console.log(`\n[${index + 1}/${total}] Fetching: ${videoUrl}`)
-  const html = await fetchUrl(videoUrl)
-
-  const title = extractMeta(html, "og:title")
-  const poster = extractMeta(html, "og:image")
-
-  if (!title) {
-    console.log(`  ⚠️  Skipping — missing title`)
-    return false
-  }
-
-  const tags = extractTags(html)
-  const slug = slugify(title)
-  const postDir = path.join("./src/content/posts", slug)
-  const postFile = path.join(postDir, "index.md")
-
-  if (fs.existsSync(postFile)) {
-    console.log(`  ⏭️  Already exists, skipping: ${slug}`)
-    return false
-  }
-
-  fs.mkdirSync(postDir, { recursive: true })
-
-  const tagsYaml = tags.map((t) => `"${t}"`).join(", ")
-
-  const content = buildPost({ title, poster, videoUrl, category, tagsYaml })
-
-  fs.writeFileSync(postFile, content)
-  console.log(`  ✅ Created: ${postFile}`)
-  return true
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .slice(0, 80)
 }
 
-export function buildPost({ title, poster, videoUrl, category, tagsYaml }) {
-  const now = new Date().toISOString().replace("Z", "").slice(0, 19)
-  return `---
-title: "${title.replace(/"/g, '\\"')}"
-description: ""
-published: ${now}
-image: "${poster}"
-category: "${category}"
-tags: [${tagsYaml}]
-draft: false
-lang: ''
----
-
-👉 [Join us on WhatsApp](https://vibesnestz.vercel.app/)  
-👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
-🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
-
-<div style="position:relative;padding-top:56.25%;width:100%;">
+function iframeBlock(videoUrl) {
+  return `<div style="position:relative;padding-top:56.25%;width:100%;">
   <iframe
     src="${videoUrl}"
     style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
     allowfullscreen
     scrolling="no"
   ></iframe>
-</div>
-`
+</div>`
+}
+
+async function fixPost(videoUrl, index, total) {
+  console.log(`\n[${index + 1}/${total}] Processing: ${videoUrl}`)
+  const html = await fetchUrl(videoUrl)
+
+  const title = extractMeta(html, "og:title")
+  const poster = extractMeta(html, "og:image")
+  const tags = extractTags(html)
+
+  if (!title) {
+    console.log(`  ⚠️  Skipping — could not fetch title`)
+    return false
+  }
+
+  const slug = slugify(title)
+  const postFile = path.join("./src/content/posts", slug, "index.md")
+
+  if (!fs.existsSync(postFile)) {
+    console.log(`  ⏭️  Post not found, skipping: ${slug}`)
+    return false
+  }
+
+  const existing = fs.readFileSync(postFile, "utf-8")
+
+  if (existing.includes("<iframe")) {
+    console.log(`  ✓  Already using iframe, skipping`)
+    return false
+  }
+
+  const linksBlock = `👉 [Join us on WhatsApp](https://vibesnestz.vercel.app/)  
+👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
+🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  `
+
+  const newContent = existing.replace(
+    /<video[\s\S]*?<\/video>/i,
+    iframeBlock(videoUrl)
+  )
+
+  if (newContent === existing) {
+    console.log(`  ⚠️  No <video> tag found to replace`)
+    return false
+  }
+
+  fs.writeFileSync(postFile, newContent)
+  console.log(`  ✅ Fixed: ${postFile}`)
+  return true
 }
 
 async function main() {
   const args = process.argv.slice(2)
   if (!args[0]) {
-    console.error("Usage: node scripts/scrape-xerotica.js <category-page-url> [category-name]")
-    console.error("Example: node scripts/scrape-xerotica.js https://www.xerotica.com/categories/20/ebony/page1.html Ebony")
+    console.error("Usage: node scripts/fix-xerotica-posts.js <category-page-url>")
     process.exit(1)
   }
 
   const pageUrl = args[0]
-  const categoryName = args[1] || "Uncategorized"
-
   console.log(`\nFetching category page: ${pageUrl}`)
   const html = await fetchUrl(pageUrl)
   const videoLinks = extractVideoLinks(html)
@@ -146,21 +137,26 @@ async function main() {
     process.exit(1)
   }
 
-  console.log(`Found ${videoLinks.length} videos. Processing...\n`)
+  console.log(`Found ${videoLinks.length} videos. Fixing posts...\n`)
 
-  let created = 0
+  let fixed = 0
   let skipped = 0
 
   for (let i = 0; i < videoLinks.length; i++) {
-    const ok = await processVideo(videoLinks[i], i, videoLinks.length, categoryName)
-    if (ok) created++
-    else skipped++
+    try {
+      const ok = await fixPost(videoLinks[i], i, videoLinks.length)
+      if (ok) fixed++
+      else skipped++
+    } catch (err) {
+      console.log(`  ❌ Error: ${err.message}`)
+      skipped++
+    }
     await new Promise((r) => setTimeout(r, 800))
   }
 
   console.log(`\n=== Done ===`)
-  console.log(`Created: ${created} posts`)
-  console.log(`Skipped: ${skipped} (already exist or missing data)`)
+  console.log(`Fixed: ${fixed} posts`)
+  console.log(`Skipped: ${skipped}`)
 }
 
 main()

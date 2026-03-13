@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/6/d/8/6/2647dde1ce3dc45cca0545dba4bac207.mp4/1280/2647dde1ce3dc45cca0545dba4bac207.mp4_6_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/d/8/6/66d86569e7402.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/d/8/6/66d8660b21002.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/d/8/6/66d8664fde6be.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/babein-actress-sofi-vega-gettin-it-on-with-her-ho-ellie-luna-in-a-dank-lesbic-tale-sofo-savoring-luna-s-pu-y-from-the-rear-while-she-vocalizes-her-carnal-pleasure-55977.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

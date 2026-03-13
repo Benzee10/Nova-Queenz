@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/4/f/1/c/b367318cf9da444246d07cd9debfa000.mp4/1280/b367318cf9da444246d07cd9debfa000.mp4_4_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/4/f/1/c/64f1c0f088948.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/4/f/1/c/64f1c131b3aa0.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/4/f/1/c/64f1c1504ad06.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/the-gorgeous-blonde-takes-on-her-hot-ebony-girlfriend-as-she-pleasures-her-with-oral-sex-52675.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

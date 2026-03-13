@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/5/0/8/7/9616ffd6e116265e8f6fe938752f1aa0.mp4/1280/9616ffd6e116265e8f6fe938752f1aa0.mp4_7_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/5/0/8/7/650876ef0cb5a.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/5/0/8/7/6508773d58312.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/5/0/8/7/6508775fbb2da.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/beautiful-and-endearing-ebony-babe-captivatingly-stripping-in-hotel-exposing-her-gorgeous-slender-body-with-small-perky-boobs-52807.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

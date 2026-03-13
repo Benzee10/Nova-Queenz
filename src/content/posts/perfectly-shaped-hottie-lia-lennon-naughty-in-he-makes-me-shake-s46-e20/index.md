@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/6/4/4/7/eee6cd2f1eb36c82770e235c72d71da8.mp4/1280/eee6cd2f1eb36c82770e235c72d71da8.mp4_5_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/4/4/7/664471e12e125.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/4/4/7/66447254f046a.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/4/4/7/6644728f0835f.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/perfectly-shaped-hottie-lia-lennon-naughty-in-he-makes-me-shake-s46-e20-54934.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

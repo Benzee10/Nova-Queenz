@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/4/7/0/a/cfea0b8b7b22588b9b1ec379cff23aaa.mp4/1280/cfea0b8b7b22588b9b1ec379cff23aaa.mp4_4_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/4/7/0/a/6470a5d8f05b0.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/4/7/0/a/6470a5ff4818c.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/4/7/0/a/6470a60fc02b3.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/curly-haired-ebony-moans-passionately-as-she-rides-her-lovers-wang-after-pleasuring-him-with-a-massage-51720.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

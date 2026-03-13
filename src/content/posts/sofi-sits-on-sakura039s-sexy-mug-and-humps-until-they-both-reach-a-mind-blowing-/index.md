@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/6/d/b/0/1142fb2e0a1388672f6e881f0635b36d.mp4/1280/1142fb2e0a1388672f6e881f0635b36d.mp4_7_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/d/b/0/66db0243a80c0.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/d/b/0/66db028d63802.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/d/b/0/66db02bd08e95.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/sofi-sits-on-sakura-s-sexy-mug-and-humps-until-they-both-reach-a-mind-blowing-orgasm-after-which-they-swap-roles-so-sakura-gets-a-taste-of-her-own-medicine-56001.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>

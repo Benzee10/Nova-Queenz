@@ -13,9 +13,11 @@ lang: ''
 👉 [Follow on Telegram](https://t.me/+62PxgSxDcZphZmFk)  
 🔞 [Watch Her Live on Cam](https://redirecting-kappa.vercel.app/)  
 
-<video controls width="100%" poster="https://cdn-media.xerotica.com/thumbs/6/6/f/4/2/450e40a068c7ce48274075ab3212118e.mp4/1280/450e40a068c7ce48274075ab3212118e.mp4_6_1280.jpg">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/f/4/2/66f42e1e05ec9.mp4?ri=2000k&rs=400k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/f/4/2/66f42e45352b2.mp4?ri=500k&rs=200k" type="video/mp4">
-  <source src="https://cdn-media.xerotica.com/videos/6/6/f/4/2/66f42e59b6347.mp4?ri=250k&rs=100k" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="position:relative;padding-top:56.25%;width:100%;">
+  <iframe
+    src="https://www.xerotica.com/video/hella-fine-fit-black-babe-gonna-show-off-her-sexy-af-bod-and-them-tight-titties-while-she-s-feeling-herself-56129.html"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allowfullscreen
+    scrolling="no"
+  ></iframe>
+</div>
